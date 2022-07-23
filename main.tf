@@ -12,4 +12,11 @@ module "aft" {
   account_provisioning_customizations_repo_name = "${var.github_username}/learn-terraform-aft-account-provisioning-customizations"
   global_customizations_repo_name               = "${var.github_username}/learn-terraform-aft-global-customizations"
   account_customizations_repo_name              = "${var.github_username}/learn-terraform-aft-account-customizations"
+
+  terraform_version = "1.2.5"
+
+  # features
+  # aft_feature_cloudtrail_data_events = true
+  # aft_feature_delete_default_vpcs_enabled = true
+  # aft_feature_enterprise_support = false
 }
